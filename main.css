@@ -1,0 +1,322 @@
+
+.font{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.link2{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link2:hover{
+    color: #997b66;
+}
+.link:hover{
+    color: #AD8B73;
+}
+.header-nombre{
+    font-size: 2em;
+}
+.header{
+     background-color: #AD8B73;
+     border: solid white 2px;
+
+}
+.card-color{
+       background-color: #AD8B73;
+       margin: 5px;
+       border-radius: 5px;
+}
+.card-color:hover{
+    background-color: #664026;
+}
+.art{
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    background-color: #614124;
+}
+.flex{
+    justify-content: space-around;
+    flex-direction: row;
+}
+.grid-footer{
+    display: grid;
+}
+.footer{
+    background-color: #AD8B73;  
+}
+.Footer-grid{
+    background-color: #AD8B73;
+    display: grid;
+    border: solid white;
+    grid-template-areas: 
+    "f-top"
+    "f-form"
+    "f-con"
+    ;
+    align-items: center;
+}
+.f-top{
+    grid-area: f-top;
+    display: flex;
+}
+
+.f-con{
+    grid-area: f-con;
+    display: flex;
+}
+.f-form{
+     grid-area: f-form;
+ }
+.f-redes{
+     grid-area: f-redes;
+ }
+
+ .footer-item{
+    text-align: center;
+   align-items: center;
+ }
+ .footer-item li{
+    display: inline; 
+    list-style-type: none; 
+    margin-left: 3%;
+    margin-right: 3%;
+ }
+.fot-cont{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.grid-art2{
+    background-color: #AD8B73;
+    display: grid;
+    width: 95%;
+    border: solid;
+    border-radius: 1em;
+    color: white;
+    margin: 1%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "titulo"
+    "foto"
+    "cuerpo"
+}
+.grid-art{
+    background-color: #AD8B73;
+    display: grid;
+    border: solid;
+    border-radius: 1em;
+    color: white;
+    margin: 1%;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 
+    "titulo"
+    "foto"
+    "cuerpo"
+}
+.titulo{
+    grid-area: titulo;
+    padding: 2%;
+}
+.foto{
+    grid-area: foto;
+    width: 70%;
+    padding: 2%;
+    justify-content: center;
+    align-content: center;
+}
+.cuerpo{
+     grid-area: cuerpo;
+     padding: 2%;
+ }
+.flex{
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+}
+.grid-contac{
+    display: grid;   
+    align-items: center;
+    grid-template-areas: 
+    "form"
+    "foto-pan"
+    
+}
+.foto-pan{
+    grid-area: foto-pan; 
+    text-align : center;
+}
+.form{
+     grid-area: form;
+ }
+ .grid-pro{
+    display: grid;
+    margin: 1%;
+    text-align: center;
+    grid-template-areas: 
+    "Producto-a"
+    "Producto-b"
+    "Producto-c"
+    "Producto-d"
+    "Producto-e"
+    "Producto-f"
+}
+.Producto-a{
+    grid-area: Producto-a;
+
+}
+.Producto-b{
+    grid-area: Producto-b;
+  
+}
+.Producto-c{
+    grid-area: Producto-c;
+
+}
+.Producto-d{
+    grid-area: Producto-d;
+
+}
+.Producto-f{
+    grid-area: Producto-e;
+
+}
+.Producto-g{
+    grid-area: Producto-f;
+
+}
+.grid-local{
+    display: grid;
+    margin: 1%;
+    text-align: center;
+    grid-template-areas: 
+    "local-a"
+    "local-b"
+    "local-c"
+    "local-d"
+    "local-e"
+    "local-f"
+}
+.local-a{
+    grid-area: local-a;
+
+}
+.local-b{
+    grid-area: local-b;
+  
+}
+.local-c{
+    grid-area: local-c;
+
+}
+.local-d{
+    grid-area: local-d;
+
+}
+.local-f{
+    grid-area: local-e;
+
+}
+.local-g{
+    grid-area: local-f;
+
+}
+
+
+@media screen and (min-width:560px) {
+    .Footer-grid{
+        display: grid;
+        grid-template-areas: 
+        "f-top f-form f-con"
+        ;
+    }
+   
+}
+@media screen and (min-width:570px) {
+   
+    .grid-art2{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "foto cuerpo"
+    }
+    .grid-contac{
+        display: grid; 
+        grid-template-areas: 
+        "form foto-pan"
+    }
+}
+@media screen and (min-width:768px) {
+   
+    .grid-art{
+        grid-template-areas: 
+        "titulo titulo"
+        "foto cuerpo"
+        "notas notas"
+    }
+}
+@media screen and (min-width:610px) {
+    .grid-pro{
+        display: grid;
+        text-align: center;
+        grid-template-areas: 
+        "Producto-a Producto-b"
+        "Producto-c Producto-d"
+        "Producto-e Producto-f"
+
+    }
+
+}
+@media screen and (min-width:904px) {
+    .grid-pro{
+        display: grid;
+        text-align: center;
+        grid-template-areas: 
+        "Producto-a Producto-b Producto-c"
+        "Producto-d Producto-e Producto-f"
+    }
+    .grid-local{
+        display: grid;
+        margin: 1%;
+        text-align: center;
+        grid-template-areas: 
+        "local-a local-b"
+        "local-c local-d"
+        "local-e local-f"
+    }
+
+}
+@media screen and (min-width:1300px) {
+    .transformame{
+        animation-name: movimiento;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    
+    @keyframes movimiento{
+    25%{
+        transform: translate(500px);
+    }
+    50%{
+        transform: translate(1000px) ;
+    }
+    75%{
+        transform: translate(500px) ;
+    }
+    100%{
+        transform: translatex(0px);
+        
+    }
+    }
+
+}
+
